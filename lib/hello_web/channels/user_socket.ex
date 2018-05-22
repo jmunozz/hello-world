@@ -2,9 +2,7 @@ defmodule HelloWeb.UserSocket do
   use Phoenix.Socket
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket,
-    check_origin: false
-
+  transport :websocket, Phoenix.Transports.WebSocket
 
 
 
