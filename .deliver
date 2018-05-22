@@ -1,0 +1,38 @@
+# 1. Give a name to your app
+
+APP="hello"
+
+# 2. Declare the names of your servers and assign the public DNS
+
+FIRST="34.250.8.112"
+
+
+# 3. Specify a user
+
+USER="ubuntu"
+
+# 4. Which host do you want to build the release on?
+
+BUILD_HOST=$FIRST
+BUILD_USER=$USER
+BUILD_AT="/tmp/edeliver/$APP/builds"
+
+# 5. Optionally specify the staging host
+
+# STAGING_HOSTS=$FIRST
+# STAGING_USER=$USER
+# DELIVER_TO="/home/ubuntu"
+
+#6. Specify which host(s) the app is going to be deployed to
+
+PRODUCTION_HOSTS=$FIRST
+PRODUCTION_USER=$USER
+DELIVER_TO="/home/ubuntu"
+
+#7. Point to the vm.args file
+
+LINK_VM_ARGS="/home/ubuntu/vm.args"
+
+#8. This is for Phoenix projects
+
+# For *Phoenix* projects, symlink prod.secret.exs to our tmp source
