@@ -37,6 +37,7 @@ environment :prod do
   set include_erts: true
   set include_src: false
   set cookie: :".?,2_FV|52_3)62X~Fm8.[{wpQWJ@tV*||Mqf;KGEz*IK`89Dy`NLGk`RaRG2/yJ"
+  plugin Releases.Plugin.LinkConfig
 end
 
 # You may define one or more releases in this file.
